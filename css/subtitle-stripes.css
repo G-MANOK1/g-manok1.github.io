@@ -1,0 +1,7 @@
+body {
+    background: #58a;
+    background-image: repeating-linear-gradient(30deg, 
+    hsla(0,0%,100%,.1), hsla(0,0%,100%,.1) 15px,
+    transparent 0, transparent 30px);
+    height: 100vh;
+}
