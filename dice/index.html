@@ -1,13 +1,37 @@
 <!DOCTYPE HTML>
 <html>
 <head>
-<meta charset="utf-8">
-<title>Игральные кубики</title>
-
+<link rel="stylesheet" type="text/css" href="../css/button.css">
+<link rel="stylesheet" type="text/css" href="../css/checkboard.css">
+<link rel="stylesheet" type="text/css" href="../css/text3d.css">
+    
 </head>
 <body>
+    <div>Игральные кубики</div>
+    <button onclick="randomDice();" style="font-family: fantasys"> Кинуть кубики</button>
+    <hr>
+     <div>Результат: <label id="random"></label></div>
+    
+    <script>
+function getRandomInt(min, max)
+{
+return Math.floor(Math.random() * (max - min + 1)) + min;
+}
+function randomDice(){
+    var random = getRandomInt(0,37);
+/*    alert(random);*/
+    document.getElementById('random').innerHTML=random;
+}
+        
+        
+    </script>
+    
+<!--    
+1. проверить работоспособность функции randomDice();
+2. получисть случайное значение от 0 до 3
+3. записать случайное значение в label
 
 
-
+-->
 </body>
 </html>
